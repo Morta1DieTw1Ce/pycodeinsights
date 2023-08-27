@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="description" content="Learn how to make simple and fun games in python for beginners very easily">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>How to make a game in python</title>
+</head>
+<body>
+  <header>
+    <h2>
+      PyCode Insights
+    </h2>
+    
+  </header>
+  <div id="head">
+    <div class="post">
+      <h2>
+        Introduction
+      </h2>
+      <summary>
+      <p>
+        Welcome to my blog dedicated to the world of Python programming! 
+      </p>
+      </summary>
+      <details>
+        <p>
+        Im Abhinav, and Im thrilled to have you join me on this exciting journey through the realms of coding, creativity, and problem-solving. Whether youre a seasoned developer or just starting out, this blog is designed to be your go-to resource for all things Python. From tutorials and tips to deep dives into advanced concepts, we will explore the power and versatility of Python together. So, lets dive into the world of code and unravel the endless possibilities that Python brings to the table.
+        </p>
+        <h3>
+          Happy Coding!
+        </h3>
+       </details>
+    </div>
+    <div class="post">
+      <h2>
+        How to make a number guessing game in python
+      </h2>
+      <p>
+        Making a no guessing game in python is surprisingly very easy and require basic programming knowledge
+      </p>
+      <summary>
+        <details>
+      <h3>
+        1.First we need to import the require library
+      </h3>
+      
+      <p>
+        Import random
+      </p>
+      <h3>Step 2: Generate Random Number</h3>
+	<p>Now we need to make a variable that generates a random number:</p>
+	<p><code>Random_no = random.randrange(1, 10)</code></p>
+
+	<h3>Step 3: Take User Input</h3>
+	<p>Now we will make a variable that takes input from the user:</p>
+	<p><code>User_input = input("guess the no:")</code></p>
+
+	<h3>Step 4: Check Users Guess</h3>
+	<p>And finally, we will make many if-else statements to determine if our answer is correct or not:</p>
+	<p>
+		<code>
+		if User_input == Random_no:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;print(Correct!)<br>
+		if User_input &lt; Random_no:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;print(too low!)<br>
+		if User_input &gt; Random_no:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;print(too high)<br>
+		else:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;print(Error!)
+		</code>
+	</p>
+
+	<h3>Complete Source Code:</h3>
+	<p>Below is the complete source code with necessary imports:</p>
+	<p><code>
+	Import random<br>
+	<br>
+	Random_no = random.randrange(1, 10)<br>
+	User_input = input(guess the no:)<br>
+	<br>
+	if User_input == Random_no:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;print('Correct!')<br>
+	if User_input &lt; Random_no:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;print('too low!')<br>
+	if User_input &gt; Random_no:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;print('too high')<br>
+	else:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;print("Error!")<br>
+	</code></p>
+          
+	<p>
+	  Now the above code is simple, but you can make changes to the code and add more functionality to the program.
+	</p>
+ <h3>
+  Happy Coding!
+ </h3>
+	 </detail>
+	 </summary>
+    </div>
+    <div class="post">
+      <h2>
+        How to make a calculator in python
+      </h2>
+      <summary>
+      <p>
+        this is a basic example of a calculator program in Python that can perform addition, subtraction, multiplication, and division:
+        
+      </p>
+      </summary>
+      <details>
+        <pre><code>def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Cannot divide by zero"
+
+print("Select operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+choice = input("Enter choice (1/2/3/4): ")
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+if choice == '1':
+    print(num1, "+", num2, "=", add(num1, num2))
+elif choice == '2':
+    print(num1, "-", num2, "=", subtract(num1, num2))
+elif choice == '3':
+    print(num1, "*", num2, "=", multiply(num1, num2))
+elif choice == '4':
+    print(num1, "/", num2, "=", divide(num1, num2))
+else:
+    print("Invalid input")</code></pre>
+
+    <p>
+      You can run this code in a Python interpreter or save it as a .py file and run it from the command line. It will prompt you to choose an operation, input two numbers, and then display the result of the chosen operation. Keep in mind that this is a simple example, and you can expand and improve upon it based on your needs.
+    </p>
+     <h3>
+       Happy Coding!
+     </h3>
+      </details>
+    </div>
+  </div>
+
+<div class="button-container">
+ <button><a href="about.html">About</a></button>
+ <button><a href="index.html">Home</a></button>
+</div>
+  
+  
+  
+</body>
+</html>
